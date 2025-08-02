@@ -1,0 +1,110 @@
+NumPy for Data Science – Complete Concept Checklist
+===================================================
+
+1. Basics (Foundational)
+------------------------
+- Array attributes:
+  - .shape, .ndim, .dtype, .size, .itemsize, .nbytes  
+
+- Array creation:
+  - np.array(), np.arange(), np.linspace() ✔️
+  - np.zeros(), np.ones(), np.full(), np.eye() ✔️
+
+- Data types and conversions:
+  - .astype(), int32, float64, bool, object  ✔️
+
+2. Indexing, Slicing & Manipulation
+-----------------------------------
+- Indexing & slicing: ✔️
+  - a[3], a[1:5]✔️
+  - a[1, 2], a[:, 0], a[1, :]✔️
+  - Boolean indexing: a[a > 5] ✔️
+  - Fancy indexing: a[[0, 2, 4]]✔️
+
+- Array manipulation:
+  - reshape(), ravel(), flatten(), transpose(), ✔️
+  - swapaxes(), moveaxis()
+  - expand_dims(), squeeze()
+  - concatenate(), stack(), vstack(), hstack(), split()
+
+3. Math & Statistics ✔️
+--------------------
+- Element-wise operations:
+  - +, -, *, /, **, np.sqrt(), np.exp(), np.log() ✔️
+  -  Logical operator ✔️
+  -  Comparison operator ✔️
+
+- Aggregation:
+  - np.sum(), np.mean(), np.median(), np.std(), np.var(), np.min(), np.max() ✔️
+  - Use axis parameter to control operation dimension ✔️
+
+- Min/Max index functions:
+  - np.argmin(), np.argmax() ✔️
+  - np.where(), np.nonzero() ✔️
+
+- Cumulative functions:
+  - np.cumsum(), np.cumprod(), np.diff()✔️
+
+4. Broadcasting & Shape Compatibility ✔️
+-------------------------------------
+- Broadcasting rules:✔️
+  - Compare dimensions from right to left✔️
+  - Dimensions must be equal or 1✔️
+
+- np.newaxis, reshape() for broadcasting
+- Common use cases: scalar + array, column + matrix, row + matrix
+
+5. Linear Algebra (Very Useful in ML/DS)
+----------------------------------------
+- Matrix operations:
+  - @ operator(matrix multiplication)✔️
+  - np.transpose(), np.linalg.inv(), np.linalg.det()✔️
+  - np.linalg.eig(), np.trace() ✔️
+  - np.linalg.solve() for solving systems of equations✔️
+  - np.linalg.svd()
+
+6. Handling Missing Data (NaNs)
+-------------------------------
+- Checking: np.isnan(), np.isinf()
+- Replacing: np.nan_to_num(), np.where(np.isnan(a), fill_value, a)
+- Aggregation ignoring NaNs: np.nanmean(), np.nansum()
+
+7. Random Number Generation
+---------------------------
+np.random.rand(), np.random.randint(), np.random.randn()
+- np.random.seed() – reproducibility
+- Uniform: np.random.rand(), np.random.uniform()
+- Normal: np.random.randn(), np.random.normal()
+- Integers: np.random.randint()
+- Shuffling: np.random.shuffle(), np.random.permutation()
+
+8. Sorting, Searching, Set Operations
+-------------------------------------
+- np.sort(), np.argsort(), np.searchsorted()
+- np.unique(), np.intersect1d(), np.union1d(), np.setdiff1d()
+
+9. Performance & Vectorization
+------------------------------
+- Avoid loops: use vectorized operations
+- np.vectorize(), np.apply_along_axis()
+- Understand views vs copies
+
+10. Interfacing with Other Libraries
+------------------------------------
+- Pandas: pd.DataFrame(np_array), .values
+- Scikit-learn: Model input/output
+- TensorFlow/PyTorch: tensor conversions
+
+Bonus: Utility Functions
+------------------------
+- np.clip(), np.round(), np.floor(), np.ceil()
+- np.all(), np.any()
+- Saving/loading: np.save(), np.load(), np.savetxt(), np.genfromtxt()
+
+Real-World Applications
+------------------------
+- Data cleaning: Filtering, NaN handling
+- Feature scaling: Normalization, standardization
+- Matrix algebra: Linear regression, PCA
+- Vectorized modeling: Predictions on batches
+
