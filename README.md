@@ -32,7 +32,7 @@ The journey is structured from foundational NumPy concepts to advanced technique
 - Use cases: scalar + array, column + matrix, row + matrix
 
 ### 5. Linear Algebra
-- Matrix operations: `@`, `np.transpose()`, `np.linalg.inv()`, `np.linalg.det()`, `np.linalg.eig()`, `np.trace()`, `np.linalg.solve()`, `np.linalg.svd()`
+- Matrix operations: `@`, `np.transpose()`, `np.linalg.inv()`, `np.linalg.det()`, `np.linalg.eig()`, `np.trace()`, `np.linalg.solve()`
 
 ### 6. Handling Missing Data (NaNs)
 - Checking: `np.isnan()`, `np.isinf()`
